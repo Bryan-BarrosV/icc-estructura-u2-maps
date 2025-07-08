@@ -1,5 +1,8 @@
 # Non-Linear Data Structures 
 
+## Outpod Ejecuccion Terminal
+![Resultados de Ejecución](TerminalMaps.png)
+
 ## Getting Started
 
 Este repositorio se refiere a la segunda unidad de Estructuras de Datos, donde se cubren estructuras como sets y diccionarios
