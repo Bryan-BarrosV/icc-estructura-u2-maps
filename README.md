@@ -2,6 +2,9 @@
 
 ## Outpod Ejecuccion Terminal
 ![Resultados de Ejecución](TerminalMaps.png)
+-----
+## Controllers
+![Resultados de Ejecución](TerminalControllers.png)
 
 ## Getting Started
 
