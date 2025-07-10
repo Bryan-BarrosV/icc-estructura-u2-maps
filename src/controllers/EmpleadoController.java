@@ -3,11 +3,11 @@ package controllers;
 
 import models.Empleado;
 
-public class EmpleadoContoller {
+public class EmpleadoController {
 
     private EmpleadoDAO empleadoDAO;
 
-    public EmpleadoContoller(EmpleadoDAO empleadoDAO) {
+    public EmpleadoController(EmpleadoDAO empleadoDAO) {
         this.empleadoDAO = empleadoDAO;
     }
 

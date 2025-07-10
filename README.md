@@ -1,10 +1,14 @@
-# Non-Linear Data Structures 
+# 🚀 Non-Linear Data Structures 🚀
 
-## Outpod Ejecuccion Terminal
+## 📟 Outpod Ejecuccion Terminal
 ![Resultados de Ejecución](TerminalMaps.png)
 -----
-## Controllers
-![Resultados de Ejecución](TerminalControllers.png)
+## 🖨️ Controllers
+![Resultados de Ejecución](TerminalControllersActualizado.png)
+---
+## 💾 Ejercicios
+![Resultados de Ejecución](TerminalEjercicios.png)
+---
 
 ## Getting Started
 

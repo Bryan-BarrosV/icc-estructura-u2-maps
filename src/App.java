@@ -1,4 +1,5 @@
-import controllers.EmpleadoContoller;
+import controllers.Ejercicios;
+import controllers.EmpleadoController;
 import controllers.EmpleadoDAO;
 import controllers.EmpleadoDAOHashMap;
 import controllers.EmpleadoDAOTreeMap;
@@ -16,15 +17,15 @@ public class App {
         runEmpleadoExample();
 
         // Ejecuta los ejercicios de sumatoria y anagramas
-        //runEjerccios();
+        runEjerccios();
     }
 
     // Ejemplo de gestión de empleados usando HashMap y TreeMap
     private static void runEmpleadoExample() {
         EmpleadoDAO empleadoDAOHash = new EmpleadoDAOHashMap();
-        EmpleadoContoller empleadoContoller = new EmpleadoContoller(empleadoDAOHash);
+        EmpleadoController empleadoContoller = new EmpleadoController(empleadoDAOHash);
         EmpleadoDAOTreeMap empleadoDAOTreeMap = new EmpleadoDAOTreeMap();
-        EmpleadoContoller empleadoContoller2 = new EmpleadoContoller(empleadoDAOTreeMap);
+        EmpleadoController empleadoContoller2 = new EmpleadoController(empleadoDAOTreeMap);
 
         Empleado emp1 = new Empleado(5, "Pedro", "Dev");
         Empleado emp2 = new Empleado(3, "Juan", "Dev");
@@ -60,7 +61,34 @@ public class App {
         mapa.ejemplosConTreeMap();
     }
 
-    //private static void runEjerccios() {
-    //
-    //}
+    private static void runEjerccios() {
+    Ejercicios ej = new Ejercicios();
+
+    System.out.println("\n--- Anagramas ---");
+    System.out.println("listen vs silent: " + Ejercicios.areAnagrams("listen", "silent"));
+    System.out.println("hello vs bello: " + Ejercicios.areAnagrams("hello", "bello"));
+    System.out.println("triangle vs integral: " + Ejercicios.areAnagrams("triangle", "integral"));
+
+    System.out.println("\n--- Sumatoria ---");
+    int[] resultado = ej.sumatoriaDeDos(new int[]{9, 2, 3, 6}, 5);
+    if (resultado != null) {
+        System.out.println("Índices: [" + resultado[0] + ", " + resultado[1] + "]");
+    } else {
+        System.out.println("No se encontró combinación.");
+    }
+
+    int[] resultado2 = ej.sumatoriaDeDos(new int[]{9, 2, 3, 6}, 10);
+    if (resultado2 != null) {
+        System.out.println("Índices: [" + resultado2[0] + ", " + resultado2[1] + "]");
+    } else {
+        System.out.println("null");
+    }
+
+    System.out.println("\n--- Contar caracteres ---");
+    ej.contarCaracteres("hola");
+
+    System.out.println("\n--- Son anagramas ---");
+    System.out.println("roma vs amor: " + ej.sonAnagramas("roma", "amor"));
+}
+
 }

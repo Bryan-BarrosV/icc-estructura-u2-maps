@@ -23,8 +23,9 @@ public class EmpleadoDAOHashMap implements EmpleadoDAO {
 
     @Override
     public void list() {
-        for(Empleado empleado : empleados.values()){
-            System.out.println(empleados);
-        }
+        for (Empleado empleado : empleados.values()) {
+            System.out.println(empleado);
     }
+}
+
 }
